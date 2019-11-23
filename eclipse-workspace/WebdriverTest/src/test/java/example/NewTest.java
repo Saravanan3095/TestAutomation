@@ -20,6 +20,7 @@ public class NewTest {
 		@BeforeTest
 		public void beforeTest() {
 			
+			
 			 System.setProperty("webdriver.chrome.driver","C:\\Program Files\\Webdriver\\78.0.3904.70\\chromedriver.exe");
 			driver = new ChromeDriver();  
 		}		
