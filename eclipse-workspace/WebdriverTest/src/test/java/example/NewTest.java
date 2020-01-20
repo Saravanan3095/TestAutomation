@@ -50,11 +50,7 @@ public class NewTest {
 	
 	  @Test(enabled = true,dataProvider="TestData") 
 	  public void Excelread(String name,String DOB) {
-		/*
-		 * System.out.println("Suitecheck:"+value);
-		 * System.out.println("Testcheck:"+Value2);
-		 */
-		  System.out.println("Name::"+name);
+				  System.out.println("Name::"+name);
 		  System.out.println("DOB:"+DOB);
 	  
 	  }
@@ -72,12 +68,12 @@ public class NewTest {
 		}
 		@DataProvider(name="Datacheck")
 		public static Object[][] primeNumbers(){
-			 //return new Object[][] {{2, true}, {6, false}, {19, true}, {22, false}, {23, true}};
+			
 			return new Object[][] {{2, true}, {6, true}, {19, true}, {22, true}, {23, true}};
 		}
 		@DataProvider(name="TestData")
 		public static Object[][] TestData() throws Exception{
-			 //return new Object[][] {{2, true}, {6, false}, {19, true}, {22, false}, {23, true}};
+			 
 			 Object[][] testData=ExcelUtils.getTableArray(TestDataExcel,"DataSheet");
 			 return testData;
 		}
