@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 16 21:25:36 IST 2019</td>
+<td>Started on:</td><td>Sun Jan 05 20:26:06 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21717 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16401 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,10 +75,88 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='example.NewTest.testEasy()'><b>testEasy</b><br>Test class: example.NewTest</td>
+<td title='example.NewTest.DataCheck()'><b>DataCheck</b><br>Test class: example.NewTest<br>Parameters: 2, true</td>
 <td></td>
-<td>9</td>
-<td>example.NewTest@39aeed2f</td></tr>
+<td>0</td>
+<td>example.NewTest@5622fdf</td></tr>
+<tr>
+<td title='example.NewTest.DataCheck()'><b>DataCheck</b><br>Test class: example.NewTest<br>Parameters: 6, true</td>
+<td></td>
+<td>0</td>
+<td>example.NewTest@5622fdf</td></tr>
+<tr>
+<td title='example.NewTest.DataCheck()'><b>DataCheck</b><br>Test class: example.NewTest<br>Parameters: 19, true</td>
+<td></td>
+<td>0</td>
+<td>example.NewTest@5622fdf</td></tr>
+<tr>
+<td title='example.NewTest.DataCheck()'><b>DataCheck</b><br>Test class: example.NewTest<br>Parameters: 22, true</td>
+<td></td>
+<td>0</td>
+<td>example.NewTest@5622fdf</td></tr>
+<tr>
+<td title='example.NewTest.DataCheck()'><b>DataCheck</b><br>Test class: example.NewTest<br>Parameters: 23, true</td>
+<td></td>
+<td>0</td>
+<td>example.NewTest@5622fdf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='example.NewTest.Excelread()'><b>Excelread</b><br>Test class: example.NewTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:149)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:429)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1262609629", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1262609629'><pre>java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:149)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:429)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>example.NewTest@5622fdf</td></tr>
 </table><p>
 </body>
 </html>

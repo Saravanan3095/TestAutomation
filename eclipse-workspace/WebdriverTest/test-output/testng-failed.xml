@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <parameter name="Suitecheck" value="Success"/>
+  <parameter name="Check" value="SuiteSuccess"/>
+  <test name="Test(failed)">
+    <parameter name="Suitecheck" value="Success"/>
     <classes>
       <class name="example.NewTest">
         <methods>
-          <include name="testEasy"/>
+          <include name="testEasy" invocation-numbers="0"/>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- example.NewTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

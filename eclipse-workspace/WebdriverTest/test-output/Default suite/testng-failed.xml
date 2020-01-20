@@ -5,7 +5,8 @@
     <classes>
       <class name="example.NewTest">
         <methods>
-          <include name="testEasy"/>
+          <include name="afterTest"/>
+          <include name="Excelread"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- example.NewTest -->
