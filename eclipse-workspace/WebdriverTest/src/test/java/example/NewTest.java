@@ -17,7 +17,7 @@ public class NewTest {
 	    private WebDriver driver;
 	    ExcelUtils eu=new ExcelUtils();
 	    static String TestDataExcel="C:\\Users\\pc\\eclipse-workspace\\WebdriverTest\\src\\main\\resources\\testData\\DataTest.xlsx";
-		@Test(enabled = true)
+		@Test
 		@Parameters("Check")
 		public void testEasy(String value) {
 			System.out.println("value:"+value);
@@ -48,7 +48,7 @@ public class NewTest {
 		}
 
 	
-	  @Test(enabled = true,dataProvider="TestData") 
+	  @Test(dataProvider="TestData") 
 	  public void Excelread(String name,String DOB) {
 				  System.out.println("Name::"+name);
 		  System.out.println("DOB:"+DOB);

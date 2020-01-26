@@ -7,7 +7,7 @@
   <parameter name="Suitecheck" value="Success"/>
     <classes>
        <class name="example.NewTest">
-       <include name="testEasy"></include>
+       <include name="Excelread"></include>
        </class>
     </classes>
   </test> <!-- Test -->
