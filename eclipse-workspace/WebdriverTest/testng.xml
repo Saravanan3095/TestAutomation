@@ -8,7 +8,9 @@
     <classes>
      
        <class name="example.NewTest">
+        <methods>
       <include name="testEasy"></include>
+       </methods>
       </class>
     </classes>
   </test> <!-- Test -->
